@@ -1,0 +1,282 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+  
+}
+/*Jarak Section*/
+section {
+  margin: 80px 0; /* Memberi jarak 40px di atas dan bawah */
+  gap: 15px;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  padding: 20px;
+  background-image: url("../img/download\ \(11\).jpeg");
+  background-attachment: fixed; /* Membuat background tetap */
+}
+/* Font|Text Settings*/
+p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 17px;
+}
+/* Navigation Bar */
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(255, 182, 193, 0.9);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  gap: 10px;
+}
+
+nav img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Welcome Page */
+.welcome-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+}
+
+.welcome-page h1 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+}
+
+.welcome-page button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background: #ff7b7b;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.welcome-page button:hover {
+  background: #ff4c4c;
+}
+.Sakurafall {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+.Sakurafall img.Sakurafall1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Info Page */
+.info-page {
+  display: none;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  
+}
+
+.info-page h2, .info-page h3 {
+  text-align: center;
+}
+
+.info-page img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+  
+}
+
+/* Photo Album */
+.photo-album {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.photo-album img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+  border: 2px solid #4f0404;
+}
+
+.photo-album video {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+/*Table*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+  
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  
+}
+
+tr:nth-child(even){background-color: #b87b7b}
+
+tr{
+  background-color: #ddd;
+}
+th {
+  background-color: #5d0c0c;
+  color: white;
+  
+}
+/* Section Containers */
+.section-box {
+  background: rgba(255, 255, 255, 0.8);
+  gap: 15px;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+
+/* Guest Form */
+.guest-form, .gift-options, .location {
+  margin-top: 20px;
+  background: rgba(255, 182, 193, 0.4);
+}
+
+.guest-form input, .guest-form button {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.guest-form button {
+  background: #ff7b7b;
+  color: white;
+  cursor: pointer;
+}
+
+.guest-form button:hover {
+  background: #ff4c4c;
+}
+
+/* Embedded Videos */
+iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* Music Control */
+.music-control {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+}
+
+.music-control img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+/* Decoration */
+.decor {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.decor img {
+  width: 100px;
+  margin: 10px;
+} 
+
+
+/* Responsive Media Queries */
+@media screen and (max-width: 768px) {
+  .welcome-page h1 {
+      font-size: 2em;
+  }
+
+  .welcome-page button {
+      font-size: 1em;
+      padding: 8px 16px;
+  }
+
+  .info-page img {
+      max-width: 150px;
+  }
+
+  .photo-album img {
+      max-width: 150px;
+  }
+
+  iframe {
+      width: 100%;
+      height: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .welcome-page h1 {
+      font-size: 1.8em;
+  }
+
+  .welcome-page button {
+      font-size: 0.9em;
+  }
+
+  .photo-album img {
+      max-width: 120px;
+  }
+
+  iframe {
+      height: 180px;
+  }
+}

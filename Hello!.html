@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--Font-->
+    <link href='https://fonts.googleapis.com/css2?family=Allura&display=swap' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Icon Web-->
+    <link rel="icon" type="image/x-icon" href="assets/img/pngwing.com (1).png">
+    <!--Link Style-->
+    <link rel="stylesheet" type="text/css" href="assets/css/Hello!.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--Nama Web-->
+    <title>Hello!</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <a href="#photos"><img src="assets/img_icon/1.png" alt="Photos"></a>
+        <a href="#album"><img src="assets/img_icon/2.png" alt="Album"></a>
+        <a href="#gift"><img src="assets/img_icon/3.png" alt="Gift"></a>
+        <a href="#location"><img src="assets/img_icon/4.png" alt="Location"></a>
+    </nav>
+
+    <!-- Music Control -->
+    <div class="music-control">
+        <img id="musicToggle" src="assets/img_icon/volume.png" alt="Music Control" onclick="toggleMusic()">
+    </div>
+
+    <!-- Welcome Page -->
+    <div  class="welcome-page" id="welcome">
+        <p>Undangan Datang di Pernikahan</p><h1><br>Ayako & Hiroshi</h1>
+        <button onclick="showInfoPage()">Buka Undangan</button>
+    </div>
+
+    <!-- Info Page -->
+    <div class="info-page" id="info">
+      <div class="Sakurafall">
+      <img class="Sakurafall1" src="assets/img/Gif/33Hn.gif" alt="Sakura falling GIF">
+      <img class="Sakurafall1" src="assets/img/Gif/33Hn.gif" alt="Sakura falling GIF">
+      <img class="Sakurafall1" src="assets/img/Gif/33Hn.gif" alt="Sakura falling GIF">
+      <img class="Sakurafall1" src="assets/img/Gif/33Hn.gif" alt="Sakura falling GIF"></div>
+        <h2>Ayako & Hiroshi</h2><br>
+        <p><b>愛はすべてを征服し、古い愛は決して消えることはありません</b></p>
+        <p><b>"Ai wa subete o seifuku shi, furui ai wa kesshite kieru koto wa arimasen"</b></p><br>
+        <p>Cinta mengalahkan segalanya dan cinta lama tidak pernah hilang</p><br>
+        <section  class="photos" id="photos">
+            <img src="assets/img/Saya.png" alt="Foto Ayako">
+            <p>Instagram: <a href="https://instagram.com/ayako" target="_blank">@ayako</a></p>
+            <img src="assets/img/Kamu.png" alt="Foto Hiroshi">
+            <p>Instagram: <a href="https://instagram.com/hiroshi" target="_blank">@hiroshi</a></p>
+        </section>
+<hr>
+        <h3>Tabel Tamu Undangan</h3>
+      <div class="table-tm" style="overflow-x: auto;">
+        <table class="table-tamu" >
+          <tr>
+            <th>Nama</th>
+            <th>Posisi</th>
+            <th>Hubungan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bapak Satria</td>
+            <td>Guru/Pengajar</td>
+            <td>Rekan Bisnis</td>
+          </tr>
+          <tr>
+            <td>Bapak ir.Prabowo</td>
+            <td>Presiden R.I</td>
+            <td>Rekan Bisnis</td>
+          </tr>
+          <tr>
+            <td>Buya Yahya</td>
+            <td>Kiai/Pengajar</td>
+            <td>Pembimbing</td>
+          </tr>
+          <tr>
+            <td>Mr.Saepul</td>
+            <td>Ceo</td>
+            <td>Kerabat</td>
+          </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic content can be added here -->
+            </tbody>
+        </table>
+      </div>
+<hr>
+        <section class="photo-album" id="album">
+            <h3>Album Foto & Video</h3>
+            <div>
+                <img src="assets/img/download (4).jpeg" alt="Foto 1">
+                <img src="assets/img/download (3).jpeg" alt="Foto 2">
+                <img src="assets/img/Kawai kuncir.jpg" alt="Foto 3">
+                <img src="assets/img/Kawai2.jpg" alt="Foto 4">
+                <video src="assets/video/Bucin.mp4" controls width="300"></video>
+            </div>
+            <iframe src="https://www.youtube.com/embed/O9M_XH8YSlQ" allowfullscreen></iframe>
+        </section>
+
+        <section class="gift-options" id="gift">
+            <h3>Kirim Hadiah</h3>
+            <p>Alamat: <strong>123 Sakura Street, Tokyo</strong></p>
+            <p>No. Rekening: <strong>0123456789 (Bank Sakura)</strong></p>
+            <p>QRIS:</p>
+            <img src="assets/img/pngwing.com (5).png" alt="QRIS Code" width="150">
+        </section>
+
+        <section class="guest-form">
+          <h3>Konfirmasi Kehadiran</h3>
+          <form>
+            <form action="https://formbold.com/s/FORM_ID" method="POST">
+              <input type="text" name="fName" placeholder="First Name" class="formbold-form-input" required>
+              <input type="text" name="lName" placeholder="Last Name" class="formbold-form-input" required>
+              <input type="email" name="email" placeholder="Example@gmail.com" class="formbold-form-input" required>
+              <input type="number" name="guest" placeholder="Berapa banyak keluarga yang ikut?" class="formbold-form-input" required>
+              <input type="date" name="date" class="formbold-form-input" required>
+              <input type="time" name="time" class="formbold-form-input" required>
+      
+              <!-- Gender Radio Buttons -->
+              <div class="formbold-form-gender">
+                <label>
+                  <input type="radio" name="gender" value="Laki" required> 
+                  <p>Laki</p>
+                </label>
+                <label>
+                  <input type="radio" name="gender" value="Perempuan" required>
+                  <p>Perempuan</p>
+                </label>
+              </div>
+      
+              <button type="submit" class="formbold-btn">Submit</button>
+          </form>
+      </section>
+     
+        <section class="location" id="location">
+            <h3>Lokasi Acara</h3>
+            <p>Akad: 10:00 AM, Sakura Hall</p>
+            <p>Resepsi: 13:00 PM, Sakura Garden</p>
+            <iframe src="https://maps.google.com/maps?q=Sakura%20Hall&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        </section>
+        <section class="guest-form">
+          <form id="section-8">
+            <label for="textbox"><p>Pesan & Doa:</p></label>
+            <textarea id="textbox" name="textbox" rows="3"></textarea><br>
+            <button type="submit">Kirim Pesan</button>
+          </form>
+          </section>
+        <div class="decor">
+            <img src="assets/img/pngwing.com (1).png"Hiasan Tori Gate">
+            <p><b>Terimakasih.</b><br>Semoga hadiah dan kedatangan kalian membawa berkah untuk kamu se-keluarga</p>
+        </div>
+    </div>
+    <script src="assets/javascript/Hello.js"></script> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+  </body>
+  
+</html>
